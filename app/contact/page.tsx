@@ -76,7 +76,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm font-medium">Phone</p>
-                <p className="text-sm text-muted-foreground">+91 9793932581</p>
+                <p className="text-sm text-muted-foreground">+919793032581</p>
               </div>
             </div>
 
@@ -86,7 +86,9 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm font-medium">Location</p>
-                <p className="text-sm text-muted-foreground">Bengaluru,India</p>
+                <p className="text-sm text-muted-foreground">
+                  Bengaluru, India
+                </p>
               </div>
             </div>
           </CardContent>
@@ -96,6 +98,10 @@ export default function ContactPage() {
                 Nabin Chapagain
               </p>
               <p>Full Stack Developer</p>
+              <p>
+                Expert in JavaScript, TypeScript, React, Next.js, Node.js, and
+                Tailwind CSS
+              </p>
             </div>
           </CardFooter>
         </Card>
@@ -187,6 +193,7 @@ export default function ContactPage() {
           always open to new opportunities and connections.
         </p>
       </div>
+      {/* Removing the duplicate contact information section */}
     </div>
   );
 }
