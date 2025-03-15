@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['placehold.co', 'via.placeholder.com', 'picsum.photos', 'images.unsplash.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'raw.githubusercontent.com',
+                pathname: '**',
+            },
+        ],
     },
 }
 
