@@ -1,5 +1,4 @@
-// Add this to your existing tailwind.config.js
-// Fix the duplicate keyframes property
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -77,11 +76,32 @@ module.exports = {
             'background-position': 'right center',
           },
         },
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        shimmer: {
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'gradient-x': 'gradient-x 10s ease infinite',
+        blob: "blob 7s infinite",
+        shimmer: "shimmer 2s infinite",
       },
     },
   },
